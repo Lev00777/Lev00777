@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alex Klymenko — Applied AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0E1116;--panel:#161B22;--panel-2:#1C232D;--line:#2A323D;
+    --ink:#E7ECF2;--muted:#8B97A6;--dim:#5D6975;
+    --signal:#36E0C8;--signal-2:#7C5CFF;--amber:#F2A93B;
+    --display:'Space Grotesk',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--display);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+
+  /* HERO */
+  .hero{position:relative;padding:80px 0 56px;border-bottom:1px solid var(--line);overflow:hidden}
+  .hero-grid{position:absolute;inset:0;opacity:.4;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 70% 60% at 50% 0%,#000 30%,transparent 75%)}
+  .hero .wrap{position:relative}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--signal);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--signal)}
+  h1{font-size:clamp(36px,7vw,62px);line-height:1.02;font-weight:700;letter-spacing:-.02em;margin-bottom:14px}
+  .role{font-size:clamp(15px,2.4vw,19px);color:var(--ink);font-family:var(--mono);margin-bottom:8px}
+  .role b{background:linear-gradient(90deg,var(--signal),var(--signal-2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .loc{color:var(--muted);font-size:15px;margin-bottom:30px}
+  .contact{display:flex;flex-wrap:wrap;gap:12px}
+  .contact a{font-family:var(--mono);font-size:13px;padding:10px 16px;border:1px solid var(--line);border-radius:8px;background:var(--panel);transition:.2s;display:inline-flex;align-items:center;gap:8px}
+  .contact a:hover{border-color:var(--signal);color:var(--signal);transform:translateY(-2px)}
+  .contact a.dl{background:var(--signal);color:#04201B;border-color:var(--signal);font-weight:700}
+  .contact a.dl:hover{box-shadow:0 0 22px -4px var(--signal);color:#04201B}
+
+  /* SECTIONS */
+  section{padding:54px 0;border-bottom:1px solid var(--line)}
+  .sec-label{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+  h2{font-size:clamp(22px,3.4vw,30px);font-weight:600;letter-spacing:-.015em;margin-bottom:8px}
+  .summary{color:var(--muted);font-size:16.5px;max-width:760px}
+  .summary em{color:var(--signal);font-style:normal}
+
+  /* COMPETENCIES */
+  .comp{display:flex;flex-wrap:wrap;gap:9px;margin-top:8px}
+  .comp span{font-family:var(--mono);font-size:12.5px;padding:7px 12px;background:var(--panel);border:1px solid var(--line);border-radius:999px;color:var(--ink)}
+
+  /* SKILLS */
+  .skills{display:grid;grid-template-columns:1fr;gap:14px;margin-top:10px}
+  .skl{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .skl .k{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--signal);margin-bottom:7px}
+  .skl .v{font-size:14.5px;color:var(--ink)}
+
+  /* EXPERIENCE */
+  .job{margin-top:30px}
+  .job:first-of-type{margin-top:10px}
+  .job-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:4px}
+  .job-title{font-size:18px;font-weight:600}
+  .job-meta{font-family:var(--mono);font-size:12.5px;color:var(--dim)}
+  .job ul{list-style:none;margin-top:12px}
+  .job li{position:relative;padding-left:22px;color:var(--muted);font-size:14.5px;margin-bottom:9px}
+  .job li::before{content:"▸";position:absolute;left:0;color:var(--signal)}
+
+  /* PROJECT */
+  .proj{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--signal-2);border-radius:10px;padding:26px;margin-top:14px}
+  .proj h3{font-size:18px;margin-bottom:6px}
+  .proj .sub{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-bottom:16px}
+  .proj .sub a{color:var(--signal)}
+  .proj ul{list-style:none}
+  .proj li{position:relative;padding-left:22px;color:var(--muted);font-size:14.5px;margin-bottom:8px}
+  .proj li::before{content:"▸";position:absolute;left:0;color:var(--signal-2)}
+  .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .stack span{font-family:var(--mono);font-size:12px;padding:6px 11px;background:var(--panel-2);border:1px solid var(--line);border-radius:6px}
+
+  /* META GRID */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+  .meta-block .k{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);margin-bottom:8px}
+  .meta-block p{font-size:14.5px;color:var(--muted);margin-bottom:6px}
+  .lang span{color:var(--ink);font-weight:600}
+
+  footer{padding:48px 0 64px;text-align:center}
+  footer .who{font-family:var(--mono);font-size:13px;color:var(--dim);line-height:1.9}
+  footer .who a{color:var(--signal)}
+
+  @media(max-width:680px){.grid2{grid-template-columns:1fr}section{padding:42px 0}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-grid"></div>
+  <div class="wrap">
+    <div class="eyebrow">Resume</div>
+    <h1>Alex Klymenko</h1>
+    <div class="role"><b>Applied AI Engineer</b> · AI Application Developer · Mobile AI · Flutter</div>
+    <div class="loc">Montreal, QC, Canada — Open to Remote · Hybrid · On-site (Montreal / Ottawa / Toronto)</div>
+    <div class="contact">
+      <a class="dl" href="mailto:alex.neuroorbit@gmail.com">Email me →</a>
+      <a href="tel:+16474019093">+1 (647) 401-9093</a>
+      <a href="https://linkedin.com/in/alex-klymenko-128721254">LinkedIn</a>
+      <a href="https://github.com/Lev00777">GitHub</a>
+      <a href="https://lev00777.github.io/Quiet-Translator-Showcase">Case Study</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">Summary</div>
+    <h2>I build production AI products — end to end.</h2>
+    <p class="summary">Applied AI Engineer who designs and ships production-ready AI applications from problem discovery to App Store release. I architected and launched a real-time, multilingual speech-translation platform on a multi-provider AI pipeline, streaming audio over WebSockets through a serverless cloud backend. I don't just call AI APIs — I <em>design low-latency AI systems</em>, integrate multiple speech and language models, harden them for security and privacy, and turn them into real applications people use. I came to AI from the industrial floor, not the classroom: my flagship product solves a communication problem I lived through myself. Flutter and Dart are my delivery tools; applied AI is the core.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">Core Competencies</div>
+    <h2>What I do.</h2>
+    <div class="comp">
+      <span>Applied AI</span><span>Speech AI</span><span>Voice Interfaces</span><span>Conversational AI</span>
+      <span>Real-Time AI Systems</span><span>LLM &amp; AI API Integration</span><span>Prompt Engineering</span>
+      <span>Mobile AI</span><span>Cloud AI</span><span>Secure AI Architecture</span><span>AI Product Design</span>
+      <span>Cross-Platform Development</span><span>Product Strategy</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">Technical Skills</div>
+    <h2>The toolkit.</h2>
+    <div class="skills">
+      <div class="skl"><div class="k">Applied AI</div><div class="v">AI Product Development · LLM Integration · Prompt Engineering · Speech Recognition (STT) · Text-to-Speech (TTS) · Voice AI · Streaming AI · Conversational AI · Multilingual AI · Real-Time AI · NLP · AI Workflow Design</div></div>
+      <div class="skl"><div class="k">AI Platforms &amp; APIs</div><div class="v">OpenAI · OpenAI Whisper · Deepgram · AssemblyAI · DeepL · Google AI · Firebase · REST AI APIs</div></div>
+      <div class="skl"><div class="k">Cloud &amp; Backend</div><div class="v">AWS Lambda · API Gateway · Serverless Architecture · Firebase · Firestore · Authentication · JWT · REST APIs · WebSockets</div></div>
+      <div class="skl"><div class="k">Mobile</div><div class="v">Flutter · Dart · Android · iOS · Cross-Platform · Responsive UI · Material Design</div></div>
+      <div class="skl"><div class="k">Product</div><div class="v">Product Discovery · MVP Development · User Research · UX Thinking · Rapid Prototyping · Technical Product Design</div></div>
+      <div class="skl"><div class="k">Tools</div><div class="v">Git · GitHub · Android Studio · VS Code · Google Play Console · App Store Connect</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">Experience</div>
+    <h2>Where I've built.</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Founder &amp; Applied AI Engineer · NeuroOrbit AI</div>
+        <div class="job-meta">May 2025 – Present · Montreal · Remote</div>
+      </div>
+      <ul>
+        <li>Designed and built Quiet Translator — a production real-time AI speech-translation platform — from problem discovery to launch on Google Play and the App Store.</li>
+        <li>Engineered a low-latency, multilingual speech pipeline integrating multiple AI providers (Deepgram, AssemblyAI, DeepL) with three adaptive noise modes for high-interference environments.</li>
+        <li>Architected a serverless AWS backend (Lambda + API Gateway) acting as a secure AI proxy — protecting model API keys and routing streaming audio in real time over WebSockets.</li>
+        <li>Designed a privacy-first, zero-data-retention architecture: audio streamed and discarded instantly, no transcript storage — GDPR/CCPA compliant by design.</li>
+        <li>Integrated Firebase/Firestore for auth, quota management, and account lifecycle; designed the full voice-interface UX and optimized end-to-end latency.</li>
+        <li>Owned the complete AI product lifecycle: architecture, AI integration, security, UX, store compliance, and deployment — as sole engineer.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Electronics Assembler · Neptronic</div>
+        <div class="job-meta">April 2025 – Present · Montreal · On-site</div>
+      </div>
+      <ul>
+        <li>Assembled industrial HVAC control systems in a high-noise manufacturing environment — the real-world setting that exposed the multilingual communication problem behind Quiet Translator.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Self-Employed Electrician &amp; Technical Entrepreneur</div>
+        <div class="job-meta">2005 – 2023 · Ukraine &amp; Poland</div>
+      </div>
+      <ul>
+        <li>18 years solving technical problems on industrial and residential sites; managed contracts, system design, and team coordination — the problem-finding mindset I now apply to AI products.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">Selected AI Project</div>
+    <h2>Quiet Translator.</h2>
+    <div class="proj">
+      <h3>Real-time multilingual AI voice translator</h3>
+      <div class="sub">Live on Google Play &amp; App Store · <a href="https://lev00777.github.io/Quiet-Translator-Showcase">Full engineering case study →</a></div>
+      <ul>
+        <li>Multi-provider AI pipeline (Deepgram · AssemblyAI · DeepL) with real-time speech-to-text and neural translation.</li>
+        <li>Streaming audio over WebSockets through a serverless AWS AI proxy; noise-optimized recognition for industrial use cases.</li>
+        <li>Privacy-first architecture with Firebase authentication and zero data retention; voice interface designed for hands-busy environments.</li>
+      </ul>
+      <div class="stack">
+        <span>Flutter</span><span>Dart</span><span>AWS Serverless</span><span>Deepgram</span><span>AssemblyAI</span><span>DeepL</span><span>Firebase</span><span>WebSockets</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="grid2">
+      <div class="meta-block">
+        <div class="sec-label">Education</div>
+        <div class="k">Background</div>
+        <p><b style="color:var(--ink)">Associate Degree in Commercial Activity</b><br>Zaporozhye Higher Vocational School, Ukraine</p>
+        <p>Self-directed AI &amp; mobile engineering · 2022 – Present (AI-assisted, hands-on production work)</p>
+        <p>Electrical Engineering Courses, Ukraine · French evening courses, Montreal</p>
+      </div>
+      <div class="meta-block lang">
+        <div class="sec-label">Languages</div>
+        <div class="k">Spoken &amp; written</div>
+        <p><span>English</span> — Intermediate (technical: strong)</p>
+        <p><span>French</span> — Basic (A1)</p>
+        <p><span>Polish</span> — Conversational</p>
+        <p><span>Russian / Ukrainian</span> — Native</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="contact" style="justify-content:center;margin-bottom:30px">
+      <a class="dl" href="mailto:alex.neuroorbit@gmail.com">Get in touch →</a>
+      <a href="https://github.com/Lev00777">GitHub</a>
+      <a href="https://linkedin.com/in/alex-klymenko-128721254">LinkedIn</a>
+    </div>
+    <div class="who">
+      Alex Klymenko · Applied AI Engineer<br>
+      Montreal, QC · Canada
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
