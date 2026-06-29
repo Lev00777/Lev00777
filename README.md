@@ -2,6 +2,7 @@
 <p align="center"><b>Applied AI Engineer</b> · I design and ship production AI products end-to-end</p>
 
 <p align="center">
+  <a href="https://lev00777.github.io/Lev00777/resume.html">Resume</a> ·
   <a href="https://lev00777.github.io/Quiet-Translator-Showcase">Quiet Translator Case Study</a> ·
   <a href="https://linkedin.com/in/alex-klymenko-128721254">LinkedIn</a> ·
   <a href="mailto:alex.neuroorbit@gmail.com">Email</a>
@@ -61,5 +62,12 @@ My path into AI is unusual: I came from **18 years on industrial floors**, not f
 - **Own the whole stack.** Architecture, AI integration, security, UX, deployment — I take products end-to-end.
 
 ---
+
+---
+
+<p align="center">
+  <a href="https://lev00777.github.io/Lev00777/resume.html"><img src="https://img.shields.io/badge/📄_View_my_Resume-36E0C8?style=for-the-badge&logoColor=black" /></a>
+  <a href="https://lev00777.github.io/Quiet-Translator-Showcase"><img src="https://img.shields.io/badge/🔊_Quiet_Translator_Case_Study-7C5CFF?style=for-the-badge" /></a>
+</p>
 
 <p align="center"><i>Open to Applied AI / AI Engineer roles — Remote · Hybrid · Montreal / Ottawa / Toronto</i></p>
