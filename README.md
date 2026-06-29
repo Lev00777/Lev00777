@@ -3,8 +3,8 @@
 
 <p align="center">
   <a href="https://lev00777.github.io/Quiet-Translator-Showcase">Quiet Translator Case Study</a> ·
-  <a href="https://linkedin.com/in/alex-klymenko128721254">LinkedIn</a> ·
-  <a href="mailto:alexklimca22@gmail.com">Email</a>
+  <a href="https://linkedin.com/in/alex-klymenko-128721254">LinkedIn</a> ·
+  <a href="mailto:alex.neuroorbit@gmail.com">Email</a>
 </p>
 
 <p align="center">
