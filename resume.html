@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Alex Klymenko — Applied AI Engineer</title>
+<title>Alex Klymenko — Mobile App Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -72,6 +72,7 @@
   .proj li{position:relative;padding-left:22px;color:var(--muted);font-size:14.5px;margin-bottom:8px}
   .proj li::before{content:"▸";position:absolute;left:0;color:var(--signal-2)}
   .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .arch-wrap{margin:18px 0 4px;padding:14px;background:#0E1116;border:1px solid var(--line);border-radius:10px;overflow-x:auto}
   .stack span{font-family:var(--mono);font-size:12px;padding:6px 11px;background:var(--panel-2);border:1px solid var(--line);border-radius:6px}
 
   /* META GRID */
@@ -95,7 +96,7 @@
   <div class="wrap">
     <div class="eyebrow">Resume</div>
     <h1>Alex Klymenko</h1>
-    <div class="role"><b>Applied AI Engineer</b> · AI Application Developer · Mobile AI · Flutter</div>
+    <div class="role"><b>Mobile App Developer</b> · Flutter / Dart · iOS & Android · Native Integration</div>
     <div class="loc">Montreal, QC, Canada — Open to Remote · Hybrid · On-site (Montreal / Ottawa / Toronto)</div>
     <div class="contact">
       <a class="dl" href="mailto:alex.neuroorbit@gmail.com">Email me →</a>
@@ -110,7 +111,7 @@
   <div class="wrap">
     <div class="sec-label">Summary</div>
     <h2>I build production AI products — end to end.</h2>
-    <p class="summary">Applied AI Engineer who designs and ships production-ready AI applications from problem discovery to App Store release. I architected and launched a real-time, multilingual speech-translation platform on a multi-provider AI pipeline, streaming audio over WebSockets through a serverless cloud backend. I don't just call AI APIs — I <em>design low-latency AI systems</em>, integrate multiple speech and language models, harden them for security and privacy, and turn them into real applications people use. I came to AI from the industrial floor, not the classroom: my flagship product solves a communication problem I lived through myself. Flutter and Dart are my delivery tools; applied AI is the core.</p>
+    <p class="summary">Mobile app developer who designs and ships production-ready cross-platform apps end-to-end — from UI/UX to native platform integration to App Store. I built and launched Quiet Translator, a real-time Flutter app now live on both Google Play and the App Store, with a <em>custom audio-capture pipeline, Bluetooth audio routing, and native iOS/Android integration</em>. I work across the whole stack: Flutter/Dart UI, platform channels down to native code, backend/API integration, and release engineering. I came to software from 18 years in industry, so I take real ownership of what I ship — and I learn new stacks fast, proven by building and shipping a live product alone.</p>
   </div>
 </section>
 
@@ -132,12 +133,12 @@
     <div class="sec-label">Technical Skills</div>
     <h2>The toolkit.</h2>
     <div class="skills">
-      <div class="skl"><div class="k">Applied AI</div><div class="v">AI Product Development · LLM Integration · Prompt Engineering · Speech Recognition (STT) · Text-to-Speech (TTS) · Voice AI · Streaming AI · Conversational AI · Multilingual AI · Real-Time AI · NLP · AI Workflow Design</div></div>
-      <div class="skl"><div class="k">AI Platforms &amp; APIs</div><div class="v">OpenAI · OpenAI Whisper · Deepgram · AssemblyAI · DeepL · Google AI · Firebase · REST AI APIs</div></div>
-      <div class="skl"><div class="k">Cloud &amp; Backend</div><div class="v">AWS Lambda · API Gateway · Serverless Architecture · Firebase · Firestore · Authentication · JWT · REST APIs · WebSockets</div></div>
-      <div class="skl"><div class="k">Mobile</div><div class="v">Flutter · Dart · Android · iOS · Cross-Platform · Responsive UI · Material Design</div></div>
-      <div class="skl"><div class="k">Product</div><div class="v">Product Discovery · MVP Development · User Research · UX Thinking · Rapid Prototyping · Technical Product Design</div></div>
-      <div class="skl"><div class="k">Tools</div><div class="v">Git · GitHub · Android Studio · VS Code · Google Play Console · App Store Connect</div></div>
+      <div class="skl"><div class="k">Mobile</div><div class="v">Flutter · Dart · iOS &amp; Android · Cross-Platform · State Management · Responsive UI · Material Design</div></div>
+      <div class="skl"><div class="k">Native Integration</div><div class="v">Platform Channels (MethodChannel) · iOS AVAudioSession · Live Activities · Android RecordConfig · Foreground Services · Bluetooth permissions</div></div>
+      <div class="skl"><div class="k">Audio &amp; Real-Time</div><div class="v">Bluetooth routing (SCO/HFP · BLE/LE Audio · A2DP) · WebSockets streaming · VAD / noise gate · route-aware echo cancellation</div></div>
+      <div class="skl"><div class="k">Backend &amp; APIs</div><div class="v">REST APIs · Node.js · Firebase · Firestore · Authentication · JWT · AWS Lambda · API Gateway</div></div>
+      <div class="skl"><div class="k">AI Integration</div><div class="v">Deepgram · AssemblyAI · DeepL · OpenAI / Whisper — real-time AI API integration in production</div></div>
+      <div class="skl"><div class="k">Tools</div><div class="v">Git · GitHub · VS Code · Android Studio · Xcode · Gradle · Google Play Console · App Store Connect</div></div>
     </div>
   </div>
 </section>
@@ -149,16 +150,16 @@
 
     <div class="job">
       <div class="job-head">
-        <div class="job-title">Founder &amp; Applied AI Engineer · NeuroOrbit AI</div>
+        <div class="job-title">Founder &amp; Mobile App Developer · NeuroOrbit AI</div>
         <div class="job-meta">May 2025 – Present · Montreal · Remote</div>
       </div>
       <ul>
-        <li>Designed and built Quiet Translator — a production real-time AI speech-translation platform — from problem discovery to launch on Google Play and the App Store.</li>
-        <li>Engineered a low-latency, multilingual speech pipeline integrating multiple AI providers (Deepgram, AssemblyAI, DeepL) with three adaptive noise modes for high-interference environments.</li>
-        <li>Architected a serverless AWS backend (Lambda + API Gateway) acting as a secure AI proxy — protecting model API keys and routing streaming audio in real time over WebSockets.</li>
-        <li>Designed a privacy-first, zero-data-retention architecture: audio streamed and discarded instantly, no transcript storage — GDPR/CCPA compliant by design.</li>
-        <li>Integrated Firebase/Firestore for auth, quota management, and account lifecycle; designed the full voice-interface UX and optimized end-to-end latency.</li>
-        <li>Owned the complete AI product lifecycle: architecture, AI integration, security, UX, store compliance, and deployment — as sole engineer.</li>
+        <li>Designed and built Quiet Translator — a production cross-platform Flutter app — from UI/UX to native integration to launch on both Google Play and the App Store.</li>
+        <li>Built a custom real-time audio pipeline: streaming capture over WebSockets, VAD/noise gate, and route-aware echo cancellation for low latency in demanding conditions.</li>
+        <li>Implemented Bluetooth audio routing across platforms (Classic SCO/HFP, BLE/LE Audio, A2DP) with mic-selection logic — the same class of device-audio problem in modern connected products.</li>
+        <li>Bridged to native code via platform channels: iOS AVAudioSession &amp; Live Activities (Dynamic Island), Android RecordConfig, foreground services, and Bluetooth permissions for reliable background audio.</li>
+        <li>Integrated backend and APIs (Firebase auth, AWS serverless, multiple real-time AI APIs); handled testing, feature flags, security, store compliance, and release builds (Xcode/Gradle).</li>
+        <li>Owned the complete product lifecycle solo: architecture, mobile UI, native integration, backend, and deployment — end-to-end.</li>
       </ul>
     </div>
 
@@ -186,22 +187,96 @@
 
 <section>
   <div class="wrap">
-    <div class="sec-label">Selected AI Project</div>
+    <div class="sec-label">Selected Project</div>
     <h2>Quiet Translator.</h2>
     <div class="proj">
-      <h3>Real-time multilingual AI voice translator</h3>
-      <div class="sub">Live on Google Play &amp; App Store · <a href="https://lev00777.github.io/Quiet-Translator-Showcase">Full engineering case study →</a></div>
+      <h3>Real-time cross-platform translation app</h3>
+      <div class="sub">Live on Google Play &amp; App Store (iOS &amp; Android) · <a href="https://lev00777.github.io/Quiet-Translator-Showcase">Full engineering case study →</a></div>
+
+      <div class="arch-wrap">
+        <svg viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">
+          <defs>
+            <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#36E0C8"/></marker>
+          </defs>
+          <text x="20" y="30" fill="#E7ECF2" font-size="17" font-weight="700" font-family="'Space Grotesk',sans-serif">Real-Time Audio Pipeline</text>
+          <text x="20" y="52" fill="#8B97A6" font-size="12" font-family="'Space Grotesk',sans-serif">Flutter · native iOS/Android integration · shipped to both stores</text>
+
+          <!-- nodes -->
+          <g font-family="'JetBrains Mono',monospace">
+            <rect x="20" y="86" width="150" height="86" fill="#1C232D" stroke="#2A323D" stroke-width="1.5" rx="12"/>
+            <text x="36" y="110" fill="#5D6975" font-size="10" letter-spacing="1.5">CAPTURE</text>
+            <text x="36" y="132" fill="#E7ECF2" font-size="15" font-weight="600" font-family="'Space Grotesk',sans-serif">Voice Input</text>
+            <text x="36" y="152" fill="#8B97A6" font-size="11.5">mic · USB · BT</text>
+            <text x="36" y="166" fill="#8B97A6" font-size="11.5">VAD · noise gate</text>
+
+            <path d="M170 129 L212 129" stroke="#36E0C8" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+            <rect x="212" y="86" width="168" height="86" fill="#1C232D" stroke="#2A323D" stroke-width="1.5" rx="12"/>
+            <text x="228" y="110" fill="#5D6975" font-size="10" letter-spacing="1.5">ROUTING</text>
+            <text x="228" y="132" fill="#E7ECF2" font-size="15" font-weight="600" font-family="'Space Grotesk',sans-serif">BT Route Logic</text>
+            <text x="228" y="152" fill="#8B97A6" font-size="11.5">SCO/HFP · BLE</text>
+            <text x="228" y="166" fill="#8B97A6" font-size="11.5">A2DP · route-aware AEC</text>
+
+            <path d="M380 129 L422 129" stroke="#36E0C8" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+            <rect x="422" y="86" width="150" height="86" fill="#1C232D" stroke="#2A323D" stroke-width="1.5" rx="12"/>
+            <text x="438" y="110" fill="#5D6975" font-size="10" letter-spacing="1.5">TRANSPORT</text>
+            <text x="438" y="132" fill="#E7ECF2" font-size="15" font-weight="600" font-family="'Space Grotesk',sans-serif">WebSockets</text>
+            <text x="438" y="152" fill="#8B97A6" font-size="11.5">streaming audio</text>
+            <text x="438" y="166" fill="#8B97A6" font-size="11.5">low latency</text>
+
+            <path d="M572 129 L614 129" stroke="#36E0C8" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+            <rect x="614" y="86" width="150" height="86" fill="#1C232D" stroke="#36E0C8" stroke-width="2" rx="12"/>
+            <text x="630" y="110" fill="#5D6975" font-size="10" letter-spacing="1.5">BACKEND</text>
+            <text x="630" y="132" fill="#E7ECF2" font-size="15" font-weight="600" font-family="'Space Grotesk',sans-serif">AWS Proxy</text>
+            <text x="630" y="152" fill="#8B97A6" font-size="11.5">Lambda+Gateway</text>
+            <text x="630" y="166" fill="#8B97A6" font-size="11.5">secure key vault</text>
+
+            <path d="M764 129 L806 129" stroke="#36E0C8" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+            <rect x="806" y="86" width="174" height="86" fill="#1C232D" stroke="#7C5CFF" stroke-width="2" rx="12"/>
+            <text x="822" y="110" fill="#5D6975" font-size="10" letter-spacing="1.5">AI LAYER</text>
+            <text x="822" y="132" fill="#E7ECF2" font-size="15" font-weight="600" font-family="'Space Grotesk',sans-serif">STT + Translate</text>
+            <text x="822" y="152" fill="#8B97A6" font-size="11.5">Deepgram · AssemblyAI</text>
+            <text x="822" y="166" fill="#8B97A6" font-size="11.5">DeepL</text>
+
+            <!-- return path -->
+            <path d="M893 172 L893 214 L505 214 L505 244" stroke="#36E0C8" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+            <text x="600" y="207" fill="#8B97A6" font-size="10.5">translated text →</text>
+
+            <rect x="430" y="244" width="150" height="80" fill="#1C232D" stroke="#2A323D" stroke-width="1.5" rx="12"/>
+            <text x="446" y="268" fill="#5D6975" font-size="10" letter-spacing="1.5">OUTPUT</text>
+            <text x="446" y="290" fill="#E7ECF2" font-size="15" font-weight="600" font-family="'Space Grotesk',sans-serif">TTS Queue</text>
+            <text x="446" y="310" fill="#8B97A6" font-size="11.5">adaptive playback</text>
+
+            <path d="M430 284 L388 284" stroke="#36E0C8" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+            <rect x="240" y="244" width="148" height="80" fill="#1C232D" stroke="#2A323D" stroke-width="1.5" rx="12"/>
+            <text x="256" y="268" fill="#5D6975" font-size="10" letter-spacing="1.5">PLAYBACK</text>
+            <text x="256" y="290" fill="#E7ECF2" font-size="15" font-weight="600" font-family="'Space Grotesk',sans-serif">BT / Speaker</text>
+            <text x="256" y="310" fill="#8B97A6" font-size="11.5">route-aware</text>
+
+            <!-- native band -->
+            <rect x="20" y="360" width="960" height="72" rx="10" fill="#12161C" stroke="#2A323D" stroke-width="1"/>
+            <text x="36" y="384" fill="#5D6975" font-size="10" letter-spacing="1.5">NATIVE INTEGRATION</text>
+            <text x="36" y="408" fill="#F2A93B" font-size="11.5" font-weight="600">iOS: AVAudioSession via MethodChannel · Live Activities   ·   Android: RecordConfig · Foreground Service · BT permissions</text>
+            <text x="36" y="424" fill="#F2A93B" font-size="11.5" font-weight="600">Firebase Auth · Feature Flags for safe rollout</text>
+          </g>
+        </svg>
+      </div>
+
       <ul>
-        <li>Multi-provider AI pipeline (Deepgram · AssemblyAI · DeepL) with real-time speech-to-text and neural translation.</li>
-        <li>Streaming audio over WebSockets through a serverless AWS AI proxy; noise-optimized recognition for industrial use cases.</li>
-        <li>Privacy-first architecture with Firebase authentication and zero data retention; voice interface designed for hands-busy environments.</li>
+        <li>Custom real-time audio pipeline: streaming capture over WebSockets, VAD/noise gate, and route-aware echo cancellation for low latency in demanding conditions.</li>
+        <li>Bluetooth audio routing across platforms (SCO/HFP · BLE/LE Audio · A2DP) with mic-selection logic; native bridges via platform channels (iOS AVAudioSession, Live Activities; Android foreground services).</li>
+        <li>Multi-provider AI pipeline (Deepgram · AssemblyAI · DeepL) behind a secure serverless AWS proxy; Firebase auth and feature-flagged rollout.</li>
       </ul>
       <div class="stack">
-        <span>Flutter</span><span>Dart</span><span>AWS Serverless</span><span>Deepgram</span><span>AssemblyAI</span><span>DeepL</span><span>Firebase</span><span>WebSockets</span>
+        <span>Flutter</span><span>Dart</span><span>MethodChannel</span><span>AVAudioSession</span><span>WebSockets</span><span>Firebase</span><span>REST APIs</span><span>AWS Serverless</span><span>Deepgram</span><span>AssemblyAI</span><span>DeepL</span>
       </div>
     </div>
   </div>
 </section>
+
 
 <section>
   <div class="wrap">
